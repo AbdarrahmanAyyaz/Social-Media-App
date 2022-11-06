@@ -1,0 +1,115 @@
+        header {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            height: 80px;
+            background: #c6e3ea;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem calc((100vw-1300px/2));
+        }
+        
+        nav {
+            height: 80px;
+            background: #60a1fb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0rem calc((100vw-1300px/2));
+        }
+        
+        nav>a {
+            color: #040202;
+            padding: 15px solid #8f8d8f;
+            background: #c6e3ea;
+            border-radius: 5px;
+        }
+        
+        input[type=submit] {
+            background-color: rgb(62, 143, 243);
+            border-radius: 12px;
+            padding: 10px 15px;
+            border-color: rgb(107, 234, 248);
+            color: white;
+            font-size: medium;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .registerbtn:hover {
+            background-color: rgb(210, 223, 210);
+        }
+        
+        .registerbtn {
+            background-color: rgb(62, 143, 243);
+            border-radius: 12px;
+            padding: 10px 15px;
+            border-color: rgb(107, 234, 248);
+            color: white;
+            font-size: medium;
+            font-family: 'Trebuchet MS';
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .card {
+            border-radius: 25px;
+            box-shadow: 0px 14px 80px rgba(64, 35, 58, 0.2);
+            padding: 1%;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            text-align: center;
+            margin-top: 5%;
+            max-width: 450px;
+        }
+        
+        input[type=submit]:hover {
+            background-color: rgb(193, 220, 193);
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px;
+        }
+        
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #c6e3ea;
+            color: black;
+            text-align: center;
+        }
+        
+        .product-card {
+            float: left;
+            width: 33.33%;
+            border-spacing: 10px;
+        }
+        
+        #product-list {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .product-card img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+        }
+        /*
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fgraphicmamapins%2Fwebsite-backgrounds%2F&psig=AOvVaw0eKAE8Wrgn7UPyBd0QByuJ&ust=1665029035413000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIC5tNaayPoCFQAAAAAdAAAAABAD");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;*/
