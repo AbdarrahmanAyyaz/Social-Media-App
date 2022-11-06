@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>post image</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Post Image</h1>
+        <p>Abdarrahman's Webpage</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a class="action" href="postImage.html">Post Image</a>
+        <a href="viewPost.html">View Post</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <form method="post">
+                <label for="title"><b>Post Title:</b></label>
+                <input type="text" placeholder="Enter Title" name="title" id="title" required>
+                <label for="description"><b>Description:</b></label>
+                <input type="text" placeholder="Description" name="description" id="description" required>
+                <p>Please read the Acceptable Use Policy for uploading an image: <a href="terms.html">Acceptable Use Policy</a>.</p>
+                <div>
+                    <label for="UsePolicy">Do you accept the Acceptable Use Policy?</label>
+                    <input type="checkbox" name="UsePolicy" required/>
+                    <p><br/></p>
+                    <input class="registerbtn" type="submit" value="Upload image" name="submit" />
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

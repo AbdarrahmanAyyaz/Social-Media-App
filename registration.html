@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/registration.js" defer type="text/javascript"></script>
+</head>
+<header>
+    <h1>Registration</h1>
+    <p>Abdarrahman's Webpage</p>
+</header>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a class="action" href="registration.html">Registration</a>
+        <a href="postImage.html">Post Image</a>
+        <a href="viewPost.html">View Post</a>
+    </nav>
+    <main>
+        <section class="card">
+            <form id='myForm'>
+                <p>Please fill out this form to create an account.</p>
+                <hr>
+
+                <label for="email"><b>Email:</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+
+                <div class="warning" id="emailWarning"></div>
+
+                <label for="username"><b>Username:</b></label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+                <div class="warning" id="usernameWarning"></div>
+
+                <label for="psw"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                <div class="warning" id="passwordWarning"></div>
+
+                <label for="psw-repeat"><b>Repeat Password:</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+                <div class="warning" id="rPasswordWarning"></div>
+                <hr>
+                <label for="Age">Are you 13+ years of Age?</label>
+                <input type="checkbox" name="Age" id='checkAge' required/>
+                <p>By creating an account you agree to our <a href="terms.html">Terms & Conditions</a>.</p>
+                <label for="Terms">Do you accept the Terms and Conditions?</label>
+                <input type="checkbox" name="Terms" id='checkTerms' required>
+                <p>
+                    <br/>
+                </p>
+                <button id='submitButton' class="registerbtn">Register</button>
+                </div>
+
+                <div class="container signin">
+                    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
