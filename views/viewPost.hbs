@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Post</title>
+</head>
+<body>
+   <main>
+        <section class="cardd">
+
+            <img src="/{{currentPost.image}}" alt="" width="400" height="400">
+            <h2 class="post-title"><u>{{currentPost.title}}</u></h2>
+              
+            <p class="post-description"><br/>{{currentPost.description}}</p>
+
+            <p class="postUser"><br/> User: {{currentPost.username}}</p>
+
+            <p class="postDate">Date/Time: {{formatDate currentPost.createdAt}}</p>
+            <div class="comment-section">
+        <div class="comment-box">
+            <textarea id="comment-text" class="comment-textbox"></textarea>
+        </div>
+        <button id="comment-button" class="comment-button" data-postid="{{currentPost.id}}" type="submit">Comment</button>
+        <br><br>
+        
+        <div id="commentList" class="posted-comments-box">
+            {{#each currentPost.comments}}
+                {{>comment this}}
+            {{/each}}
+        </div>
+        </div>
+    
+    </main>
+</body>
+
+</html>
+
+

@@ -1,0 +1,28 @@
+
+<meta name="viewport"
+        content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="ml-1 mr-1">
+        <a class="ml-5" href="/">Home </a>
+        <a class="ml-5" href="/registration">Registration</a>
+        <a class="ml-5" href="/postImage">Post Image</a>
+         {{#if isLoggedIn}}
+         <a class="ml-5" href="/" id="logout-button" class="nav-items">Logout</a>
+        {{else}}
+        <a class="ml-5" href="/login" id="login-button" class="nav-items">Login</a>
+        {{/if}}
+
+          <div class="search">
+            <form class="search"
+            method="GET"  
+            action="/posts/search"
+            enctype="application/x-www-form-urlencoded">
+                <input type="text"
+                    placeholder=" Search Posts..."
+                    name="searchTerm" value="{{searchValue}}"/>
+                <button type="submit" class="fa fa-search"  style="font-size: 18px;">
+                </button>
+            </form>
+        </div>
+</nav>

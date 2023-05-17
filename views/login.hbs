@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login</title>
+</head>
+<body>
+    <main>
+        <section class="cardd">
+            <form 
+            method="POST"
+            action="/users/login"
+            enctype="application/x-www-form-urlencoded">
+                <p>Please fill out the information to login.</p>
+
+                <label for="username"><b>Username:</b></label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+                <label for="psw"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <button type="submit" class="registerbtn">Login</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

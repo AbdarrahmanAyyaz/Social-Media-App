@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+{{!<script src="public/js/fetch.js" defer type="text/javascript"></script>}}
+<head>
+    <title>HomePage</title>
+</head>
+
+<body>
+     <div id="numberOfProducts"></div>
+        {{#each results}}   
+     <div class="card cardd ml-5 mt-4 mb-5"style="width: 18rem; float: left;">
+  <img class="card-img-top" src="{{this.thumbnail}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"><b>{{this.title}}</b></h5>
+    <a href="/posts/{{this.id}}" class="btn btn-primary">Details</a>
+  </div>
+</div>
+        {{/each}}
+</body>
+
+
+
+</html>
+
+<!-- extra comment to push onto github -->

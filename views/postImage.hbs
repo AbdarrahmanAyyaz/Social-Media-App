@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>post image</title>
+</head>
+<body>
+    <main>
+        <section class="cardd">
+            <form 
+                action="/posts/create"
+                method="post" 
+                enctype="multipart/form-data">
+                <label for="title"><b>Post Title:</b></label>
+                <input type="text" placeholder="Enter Title" name="title" id="title" required>
+
+                <label for="description"><b>Description:</b></label>
+                <input type="text" placeholder="Enter Description" name="description" id="description" required>
+
+                <label for="pic"><b>Upload Image:</b></label>
+                <input id="img-select" type="file" name="uploadImage" accept="image/png, image/jpeg"required>
+
+                <p>Please read the Acceptable Use Policy for uploading an image: <a href="terms.html">Acceptable Use Policy</a>.</p>
+                <div>
+                    <label for="UsePolicy">Do you accept the Acceptable Use Policy?</label>
+                    <input type="checkbox" name="UsePolicy" required/>
+                     <p><br/></p>
+                    <input type="submit">
+                    {{!<input class="registerbtn" type="submit" value="Upload image" name="submit" />}}
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
